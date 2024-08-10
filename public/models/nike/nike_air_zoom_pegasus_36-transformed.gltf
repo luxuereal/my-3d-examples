@@ -1,0 +1,209 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v3.0.0-alpha.4",
+    "version": "2.0",
+    "extras": {
+      "author": "quaz30 (https://sketchfab.com/quaz30)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/nike-air-zoom-pegasus-36-00fd99e778c244c3bd3b65f99dad7cb2",
+      "title": "Nike Air Zoom Pegasus 36"
+    }
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 213255
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 38984
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 38984,
+      "max": [
+        0.35644200444221497,
+        0.4501529932022095,
+        1
+      ],
+      "min": [
+        -0.35644200444221497,
+        -0.4501529932022095,
+        -1
+      ]
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 38984
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 38984
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 342996
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "uri": "nike_air_zoom_pegasus_36-transformed_img0.webp"
+    },
+    {
+      "uri": "nike_air_zoom_pegasus_36-transformed_img1.webp"
+    },
+    {
+      "uri": "nike_air_zoom_pegasus_36-transformed_img2.webp"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "nike_air_zoom_pegasus_36-transformed_data.bin",
+      "byteLength": 342996
+    }
+  ],
+  "materials": [
+    {
+      "name": "NikeShoe",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "defaultMaterial",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2,
+            "TANGENT": 3,
+            "TEXCOORD_0": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1,
+                "TANGENT": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Sketchfab_model",
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Collada visual scene group",
+      "rotation": [
+        0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "shoe",
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "defaultMaterial",
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_texture_webp",
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsRequired": [
+    "EXT_texture_webp",
+    "KHR_draco_mesh_compression"
+  ]
+}

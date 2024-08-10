@@ -1,0 +1,167 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.8.19",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        4
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Diamond_1_0"
+    },
+    {
+      "children": [
+        0
+      ],
+      "name": "Diamond",
+      "translation": [
+        -0.000020049292288604192,
+        -0.000019431028704275377,
+        -0.000012671137483266648
+      ]
+    },
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "4ced65e621f54ff68c649fff8d360608.fbx",
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071068286895752
+      ]
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Sketchfab_model",
+      "rotation": [
+        -0.7071068286895752,
+        0,
+        0,
+        0.7071068286895752
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1,
+          "clearcoatRoughnessFactor": 0.03999999910593033
+        }
+      },
+      "name": "material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.6666669845581055,
+          0.800000011920929,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Diamond_1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 288,
+      "max": [
+        0.9913188219070435,
+        0.6777856349945068,
+        0.9909504652023315
+      ],
+      "min": [
+        -0.991340160369873,
+        -0.4284951984882355,
+        -0.9917033314704895
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 288,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 288,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 288,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3456,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3456,
+      "byteOffset": 3456
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2304,
+      "byteOffset": 6912
+    },
+    {
+      "buffer": 0,
+      "byteLength": 576,
+      "byteOffset": 9216
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "dflat_data.bin",
+      "byteLength": 9792
+    }
+  ]
+}

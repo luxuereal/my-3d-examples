@@ -5,14 +5,16 @@ import { useRouter } from "next/navigation";
 
 const tabs = [
   { name: "Nike", color: "rgba(255,255,255,0.5)", link: "nike" },
-  { name: "Shoes", color: "rgba(255,255,255,0.5)", link: "shoes" },
+  { name: "Car Racing", color: "rgba(255,255,255,0.5)", link: "car-racing" },
   { name: "Porsche", color: "rgba(255,255,255,0.5)", link: "porsche" },
+  { name: "Shoes", color: "rgba(255,255,255,0.5)", link: "shoes" },
+  { name: "Car Show", color: "rgba(255,255,255,0.5)", link: "car-show" },
   { name: "Diamond", color: "rgba(255,255,255,0.5)", link: "diamond" },
 ];
 
 const duration = 0.3;
 
-export function Menu() {
+const Menu = () => {
   const router = useRouter();
   const [selected, setSelected] = useState(0);
   const [formerColor, setFormerColor] = useState(tabs[0].color);
@@ -83,3 +85,5 @@ const selectionStyle = {
   top: 0,
   left: 0,
 };
+
+export default Menu;

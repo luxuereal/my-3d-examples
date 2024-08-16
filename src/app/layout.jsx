@@ -1,5 +1,5 @@
-import { Poiret_One, Timmana } from "next/font/google";
-import { Menu } from "@/components/layouts/menu";
+import { Timmana } from "next/font/google";
+import Menu from "../components/layouts/menu";
 import "./globals.css";
 
 const timmana = Timmana({ subsets: ["latin"], display: 'swap', weight: '400' });

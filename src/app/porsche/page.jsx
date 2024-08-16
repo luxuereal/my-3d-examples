@@ -1,4 +1,4 @@
-import { PorschePage } from "@/components/porsche/PorschePage";
+import { PorschePage } from "../../components/porsche/PorschePage";
 import "../../components/porsche/styles.css";
 
 const Porsche = () => {

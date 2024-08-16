@@ -29,7 +29,7 @@ function List({ children, open }) {
   )
 }
 
-export function Overlay() {
+const Overlay = () => {
   const state = useStore()
   return (
     <>
@@ -52,3 +52,5 @@ export function Overlay() {
     </>
   )
 }
+
+export default Overlay

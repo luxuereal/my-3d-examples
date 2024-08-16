@@ -1,4 +1,4 @@
-import DiamondPage from "@/components/diamond/DiamondPage";
+import DiamondPage from "../../components/diamond/DiamondPage";
 
 const Diamond = () => {
   return (

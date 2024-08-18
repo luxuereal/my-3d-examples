@@ -59,7 +59,6 @@ const Menu = () => {
             animate={{ color: i === selected ? "#fff" : "#222" }}
             transition={{ duration }}
             onTap={() => {
-              setFormerColor(tabs[selected].color);
               setSelected(i);
             }}
           >

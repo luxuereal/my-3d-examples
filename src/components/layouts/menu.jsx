@@ -1,27 +1,52 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const tabs = [
-  { name: "Nike", color: "rgba(255,255,255,0.5)", link: "nike" },
-  { name: "Car Racing", color: "rgba(255,255,255,0.5)", link: "car-racing" },
-  { name: "Porsche", color: "rgba(255,255,255,0.5)", link: "porsche" },
-  { name: "Shoes", color: "rgba(255,255,255,0.5)", link: "shoes" },
-  { name: "Car Show", color: "rgba(255,255,255,0.5)", link: "car-show" },
-  { name: "Diamond", color: "rgba(255,255,255,0.5)", link: "diamond" },
+  { name: "Nike", link: "nike" },
+  { name: "Car Racing", link: "car-racing" },
+  { name: "Porsche", link: "porsche" },
+  { name: "Shoes", link: "shoes" },
+  { name: "Car Show", link: "car-show" },
+  { name: "Diamond", link: "diamond" },
 ];
 
 const duration = 0.3;
 
 const Menu = () => {
   const router = useRouter();
+  const pathname = usePathname();
   const [selected, setSelected] = useState(0);
-  const [formerColor, setFormerColor] = useState(tabs[0].color);
 
   const redirect = (link) => {
     router.push(link);
   }
+
+  useEffect(() => {
+    switch (pathname) {
+      case "/nike":
+        setSelected(0);
+        break;
+      case "/car-racing":
+        selected(1);
+        break;
+      case "/porsche":
+        selected(2);
+        break;
+      case "/shoes":
+        selected(3);
+        break;
+      case "/car-show":
+        selected(4);
+        break;
+      case "/diamond":
+        selected(5);
+        break;
+      default:
+        break;
+    }
+  }, [pathname]);
 
   return (
     <div className="absolute top-16 left-20">
@@ -43,7 +68,7 @@ const Menu = () => {
               <motion.div
                 style={selectionStyle}
                 layoutId="selected"
-                initial={{ backgroundColor: formerColor }}
+                initial={{ backgroundColor: 'rgba(255,255,255,0.5)' }}
                 animate={{ backgroundColor: color }}
                 transition={{ duration }}
               />

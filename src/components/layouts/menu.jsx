@@ -2,14 +2,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
+import { color } from "three/webgpu";
 
 const tabs = [
-  { name: "Nike", link: "nike" },
-  { name: "Car Racing", link: "car-racing" },
-  { name: "Porsche", link: "porsche" },
-  { name: "Shoes", link: "shoes" },
-  { name: "Car Show", link: "car-show" },
-  { name: "Diamond", link: "diamond" },
+  { name: "Nike", color: "rgba(255,255,255,0.5)", link: "nike" },
+  { name: "Car Racing", color: "rgba(255,255,255,0.5)", link: "car-racing" },
+  { name: "Porsche", color: "rgba(255,255,255,0.5)", link: "porsche" },
+  { name: "Shoes", color: "rgba(255,255,255,0.5)", link: "shoes" },
+  { name: "Car Show", color: "rgba(255,255,255,0.5)", link: "car-show" },
+  { name: "Diamond", color: "rgba(255,255,255,0.5)", link: "diamond" },
 ];
 
 const duration = 0.3;
@@ -21,7 +22,7 @@ const Menu = () => {
 
   const redirect = (link) => {
     router.push(link);
-  }
+  };
 
   useEffect(() => {
     switch (pathname) {
@@ -62,12 +63,23 @@ const Menu = () => {
               setSelected(i);
             }}
           >
-            <button style={{ position: "relative", zIndex: 1, color: "black", paddingTop: 8, textShadow: "2px 2px 5px white" }} onClick={() => redirect(link)}>{name}</button>
+            <button
+              style={{
+                position: "relative",
+                zIndex: 1,
+                color: "black",
+                paddingTop: 8,
+                textShadow: "2px 2px 5px white",
+              }}
+              onClick={() => redirect(link)}
+            >
+              {name}
+            </button>
             {i === selected && (
               <motion.div
                 style={selectionStyle}
                 layoutId="selected"
-                initial={{ backgroundColor: 'rgba(255,255,255,0.5)' }}
+                initial={{ backgroundColor: "rgba(255,255,255,0.5)" }}
                 animate={{ backgroundColor: color }}
                 transition={{ duration }}
               />
@@ -77,7 +89,7 @@ const Menu = () => {
       </div>
     </div>
   );
-}
+};
 
 const containerStyle = {
   position: "relative",
@@ -88,7 +100,7 @@ const containerStyle = {
   alignContent: "flex-start",
   alignItems: "start",
   justifyContent: "start",
-  zIndex: 30
+  zIndex: 30,
 };
 
 const tabStyle = {

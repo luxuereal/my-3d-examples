@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
-import { color } from "three/webgpu";
 
 const tabs = [
   { name: "Nike", color: "rgba(255,255,255,0.5)", link: "nike" },
@@ -30,19 +29,19 @@ const Menu = () => {
         setSelected(0);
         break;
       case "/car-racing":
-        selected(1);
+        setSelected(1);
         break;
       case "/porsche":
-        selected(2);
+        setSelected(2);
         break;
       case "/shoes":
-        selected(3);
+        setSelected(3);
         break;
       case "/car-show":
-        selected(4);
+        setSelected(4);
         break;
       case "/diamond":
-        selected(5);
+        setSelected(5);
         break;
       default:
         break;
